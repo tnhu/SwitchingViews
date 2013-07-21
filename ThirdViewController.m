@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  ThirdViewController.m
 //  SwitchingViews
 //
 //  Created by Tan Nhu on 7/21/13.
 //  Copyright (c) 2013 tannhu. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ThirdViewController.h"
 
-@interface SecondViewController ()
+@interface ThirdViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation ThirdViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,11 +27,6 @@
     [super viewDidLoad];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    NSLog(@"viewDidAppear");
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -39,8 +34,8 @@
 
 - (IBAction)buttonTapped:(id)sender
 {
-    NSLog(@"Go to third");
-    [[[UIApplication sharedApplication] delegate] performSelector:@selector(switchToThirdView)];
+  NSLog(@"Go to first");
+  [[[UIApplication sharedApplication] delegate] performSelector:@selector(switchToFirstView)];
 }
 
 @end

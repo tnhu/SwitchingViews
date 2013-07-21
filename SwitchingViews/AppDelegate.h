@@ -9,13 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "FirstViewController.h"
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow              *window;
 @property (strong, nonatomic) FirstViewController   *first;
 @property (strong, nonatomic) SecondViewController  *second;
+@property (strong, nonatomic) ThirdViewController   *third;
+@property (strong, nonatomic) UIViewController      *active;
 
-- (void)switchView;
+- (void)switchToFirstView;
+- (void)switchToSecondView;
+- (void)switchToThirdView;
 
 @end

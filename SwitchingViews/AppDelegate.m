@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @implementation AppDelegate
 
@@ -19,12 +20,15 @@
     // just init all needed views
     self.first  = [[FirstViewController alloc] init];
     self.second = [[SecondViewController alloc] init];
+    self.third  = [[ThirdViewController alloc] init];
   
     // set transition when switching second view
+    self.first.modalTransitionStyle  = UIModalTransitionStyleCoverVertical;
     self.second.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    self.third.modalTransitionStyle  = UIModalTransitionStyleCoverVertical;
   
-    // set initial root view
-    self.window.rootViewController   = self.first;
+    // set initial root view, save active view
+    self.window.rootViewController   = self.active = self.first;
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -58,9 +62,31 @@
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)switchView
+- (void)switchToFirstView
 {
-  [self.first presentViewController:self.second animated:YES completion:nil];
+  if (self.active != self.first) {
+    [self.third dismissViewControllerAnimated:NO completion:^(void) {
+      [self.second dismissViewControllerAnimated:YES completion:^(void) {
+        self.active = self.first;
+      }];
+    }];
+  }
+}
+
+- (void)switchToSecondView
+{
+  if (self.active != self.second) {
+    [self.active presentViewController:self.second animated:YES completion:nil];
+    self.active = self.second;
+  }
+}
+
+- (void)switchToThirdView
+{
+  if (self.active != self.third) {
+    [self.active presentViewController:self.third animated:YES completion:nil];
+    self.active = self.third;
+  }
 }
 
 @end

@@ -34,8 +34,8 @@
 
 - (IBAction)buttonTapped:(id)sender
 {
-  [[[UIApplication sharedApplication] delegate] performSelector:@selector(switchView)];  
   NSLog(@"Go to second");
+  [[[UIApplication sharedApplication] delegate] performSelector:@selector(switchToSecondView)];
 }
 
 @end

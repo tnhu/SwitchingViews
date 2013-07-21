@@ -20,6 +20,8 @@
 		A479F6A3179BD7D800780056 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A479F6A1179BD7D800780056 /* FirstViewController.xib */; };
 		A479F6A7179BD8BA00780056 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A479F6A5179BD8BA00780056 /* SecondViewController.m */; };
 		A479F6A8179BD8BA00780056 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A479F6A6179BD8BA00780056 /* SecondViewController.xib */; };
+		A479F6AC179BE8CC00780056 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A479F6AA179BE8CC00780056 /* ThirdViewController.m */; };
+		A479F6AD179BE8CC00780056 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A479F6AB179BE8CC00780056 /* ThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,9 @@
 		A479F6A4179BD8BA00780056 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		A479F6A5179BD8BA00780056 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A479F6A6179BD8BA00780056 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		A479F6A9179BE8CC00780056 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		A479F6AA179BE8CC00780056 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		A479F6AB179BE8CC00780056 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,9 @@
 		A479F676179BD7AB00780056 = {
 			isa = PBXGroup;
 			children = (
+				A479F6A9179BE8CC00780056 /* ThirdViewController.h */,
+				A479F6AA179BE8CC00780056 /* ThirdViewController.m */,
+				A479F6AB179BE8CC00780056 /* ThirdViewController.xib */,
 				A479F6A4179BD8BA00780056 /* SecondViewController.h */,
 				A479F6A5179BD8BA00780056 /* SecondViewController.m */,
 				A479F6A6179BD8BA00780056 /* SecondViewController.xib */,
@@ -172,6 +180,7 @@
 				A479F699179BD7AB00780056 /* Default-568h@2x.png in Resources */,
 				A479F6A3179BD7D800780056 /* FirstViewController.xib in Resources */,
 				A479F6A8179BD8BA00780056 /* SecondViewController.xib in Resources */,
+				A479F6AD179BE8CC00780056 /* ThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +195,7 @@
 				A479F693179BD7AB00780056 /* AppDelegate.m in Sources */,
 				A479F6A2179BD7D800780056 /* FirstViewController.m in Sources */,
 				A479F6A7179BD8BA00780056 /* SecondViewController.m in Sources */,
+				A479F6AC179BE8CC00780056 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +312,7 @@
 				A479F69E179BD7AB00780056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
